@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+    <!-- BEGIN: Head-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Dashboard</title>
+        <!-- BEGIN: Vendor CSS-->
+        <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
+        <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" href="css/vanillabox.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <!-- END: Head-->
+    <!-- BEGIN: Body-->
+    <body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar" data-menu="vertical-menu-modern" data-col="2-columns">
+        <!-- BEGIN: Header-->
+        <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-red navbar-shadow">
+            <div class="navbar-wrapper">
+                <div class="navbar-header ">
+                    <ul class="nav navbar-nav flex-row">
+                        <li class="nav-item active mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="icon-toggle-right "></i></a></li>
+                        <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-down icon-toggle-right font-medium-3 link-white" ></i></a></li>
+                        <li class="nav-item mr-auto">
+                            <a class="navbar-brand" href="index.html">
+                            <img class="brand-text" alt="" src="images/png/logo-white.png">
+                            </a>
+                        </li>
+                        <li class="nav-item displaybutton-xs nav-toggle"><a class="nav-link open-navbar-container collapsed" data-toggle="collapse" data-target="#navbar-mobile" ><i class="sm icon-arrow-down"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content">
+                    <div class="collapse navbar-collapse" id="navbar-mobile">
+                        <ul class="nav navbar-nav mr-auto float-left">
+                        </ul>
+                        <ul class="nav navbar-nav float-right">
+                            <!-- <li class="dropdown dropdown-notification nav-item">
+                                <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><button class="btn mb-2 btn-red-dark">Entrar</button></a>
+                            </li> -->
+                            
+                            <li class="dropdown dropdown-user nav-item">
+                                <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="images/png/avatar.png" alt="avatar"></span></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Mi perfil</a>
+                                    <a class="dropdown-item" href="#">Configuración</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Salir</a>
+                                </div>
+                            </li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand link-white" href="#"><i class="icon-full-screen"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Header-->
+        <!-- BEGIN: Main Menu-->
+        <div class="main-menu menu-fixed menu-dark menu-accordion" data-scroll-to-active="true">
+            <div class="main-menu-content">
+                <ul class="navigation navigation-main" id="main-menu-navigation" >
+                    <li class="open nav-item"><a href="dashboard.html"><img src="images/icons/icon-home.svg" alt=""><span class="menu-title">Dashboard</span></a></li>
+                    <li class=" nav-item">
+                        <a href="pedidos.html"><img src="images/icons/icon-stats.svg" alt=""><span class="menu-title">Pedidos </span>
+                        </a>
+                        <ul class="menu-content">
+                            <li><a class="menu-item" href="pedidos.html"><i></i><span>Pedidos hoy</span></a>
+                            </li>
+                            <li><a class="menu-item" href="nuevoPedido.html"><i></i><span>Nuevo pedido</span></a>
+                            </li>
+                            <li><a class="menu-item" href="historialPedido.html"><i></i><span>Historial </span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item">
+                        <a href="#"><img src="images/icons/icon-option.svg" alt=""><span class="menu-title">Catálogo </span>
+                        </a>
+                        <ul class="menu-content">
+                            <li><a class="menu-item" href="listaProducto.html"><i></i><span>Lista de Productos</span></a>
+                            </li>
+                            <li><a class="menu-item" href="nuevoProducto.html"><i></i><span>Nuevo producto</span></a>
+                            </li>
+                            <li><a class="menu-item" href="listaCategoria.html"><i></i><span>Categorías </span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class=" nav-item">
+                        <a href="#"><img src="images/icons/icon-cart.svg" alt=""><span class="menu-title">Comercio </span>
+                        </a>
+                        <ul class="menu-content">
+                            <li><a class="menu-item" href="tienda.html"><i></i><span>Tienda</span></a>
+                            </li>
+                            <li><a class="menu-item" href="nuevocomercio.html"><i></i><span>Nuevo comercio </span></a>
+                            </li>
+                            <li><a class="menu-item" href="territorio.html"><i></i><span>Territorio </span></a>
+                            </li>
+                            <li><a class="menu-item" href="usuarios.html"><i></i><span>Usuarios </span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="reporte.html"><img src="images/icons/icon-reports.svg" alt=""><span class="menu-title">Reportes</span></a>
+                    </li>
+
+                    <li class=" nav-item"><a href="parametros.html"><img src="images/icons/icon-settings.svg" alt=""><span class="menu-title">Configuracipon</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END: Main Menu-->
+        <!-- BEGIN: Content-->
+        <div class="app-content content">
+            <div class="content-wrapper">
+                <div class="content-body pt-6 px-5">
+                    <div class="row">
+                        <div class="col-md-12 mt-4 mb-4">
+                            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-0 px-0 pb-0 mb-0">
+                                <h3 class="mb-0 tittleHeader mt-3">Dashboard 
+                                </h3>
+                            </div>
+                            
+                            <!-- <button class="btn btn-blue-degradaded-small active mt-2">SEMANA</button>
+                            <button class="btn btn-blue-degradaded-small mt-2 ">MES</button>
+                            <button class="btn btn-blue-degradaded-small mt-2">TRIMESTRE</button> -->
+                        </div>
+                        <div class="col-md-12">
+                            <div class="py-0 px-0 my-0">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-12 f-right mt-1">
+                                        <div class="input-group search">
+                                            <div class="right-inner-addon input-container">
+                                                <i class="icon-calendar"></i>
+                                                <input type="text" class="form-control" placeholder="Desde"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-12 f-right mt-1">
+                                        <div class="input-group search">
+                                            <div class="right-inner-addon input-container">
+                                                <i class="icon-calendar"></i>
+                                                <input type="text" class="form-control" placeholder="Hasta"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 mt-0">
+                                        <button class="btn btn-red-dark py-1 my-2 mr-2">Buscar</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-0 mb-0">
+                            <div class="row align-center">
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="bgContainer mt-4">
+                                        <div class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center ">
+                                            <div class="tittleContent borderl col-md-12 justify-content-end">
+                                                <h4 class="mb-0">15,000</h4>
+                                                <p  class="mb-0">Total Pedidos</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="bgContainer mt-4">
+                                        <div class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center ">
+                                            <div class="tittleContent borderl col-md-12 justify-content-end">
+                                                <h4 class="mb-0">8,500</h4>
+                                                <p class="mb-0">Pedidos Delivery</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="bgContainer mt-4">
+                                        <div class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center ">
+                                            <div class="tittleContent borderl col-md-12 justify-content-end">
+                                                <h4 class="mb-0">6,500</h4>
+                                                <p class="mb-0">Pedidos Recojo</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12">
+                                    <div class="bgContainer mt-4">
+                                        <div class="d-flex justify-content-center flex-wrap flex-md-nowrap align-items-center ">
+                                            <div class="tittleContent borderl col-md-12 justify-content-end">
+                                                <h4 class="mb-0">48.35</h4>
+                                                <p class="mb-0">Promedio Entrega</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="bgContainer mt-4">
+                                        <div class="tittleContent justify-content-star mb-3">
+                                            <h5>Pedidos <strong>por tienda</strong></h5>
+                                            <p>02 junio 2021</p>
+                                        </div>
+                                        <div class="chartjs">
+                                            <canvas id="bar-chart" height="300"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Content-->
+
+        <script src="js/vendors.min.js"></script>
+        <script src="js/app-menu.js"></script>
+        <script type="text/javascript" src="js/jquery.vanillabox-0.1.7.min.js"></script>
+        <script src="js/app.js"></script>
+        <!-- librerías necesarias para estadísticas -->
+        <script src="js/chart.min.js"></script>
+        <script src="js/estadisticas-pizzaRaul.js"></script>
+        
+    </body>
+    <!-- END: Body-->
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html class="loading" lang="en">
+    <!-- BEGIN: Head-->
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+        <title>Pedidos</title>
+        <!-- BEGIN: Vendor CSS-->
+        <link rel="stylesheet" type="text/css" href="css/vendors.min.css">
+        <!-- BEGIN: Theme CSS-->
+        <link rel="stylesheet" href="css/vanillabox.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <!-- END: Head-->
+    <!-- BEGIN: Body-->
+    <body class="vertical-layout vertical-menu-modern 2-columns fixed-navbar pace-done menu-collapsed" data-menu="vertical-menu-modern" data-col="2-columns">
+        <!-- BEGIN: Header-->
+        <nav class="header-navbar navbar-expand-lg navbar navbar-with-menu navbar-without-dd-arrow fixed-top navbar-red navbar-shadow">
+            <div class="navbar-wrapper">
+                <div class="navbar-header ">
+                    <ul class="nav navbar-nav flex-row">
+                        <li class="nav-item active mobile-menu d-lg-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="icon-toggle-right "></i></a></li>
+                        <li class="nav-item d-none d-lg-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="icon-down icon-toggle-right font-medium-3 link-white" ></i></a></li>
+                        <li class="nav-item mr-auto">
+                            <a class="navbar-brand" href="index.html">
+                            <img class="brand-text" alt="" src="images/png/logo-white.png">
+                            </a>
+                        </li>
+                        <li class="nav-item displaybutton-xs nav-toggle"><a class="nav-link open-navbar-container collapsed" data-toggle="collapse" data-target="#navbar-mobile" ><i class="sm icon-arrow-down"></i></a></li>
+                    </ul>
+                </div>
+                <div class="navbar-container content">
+                    <div class="collapse navbar-collapse" id="navbar-mobile">
+                        <ul class="nav navbar-nav mr-auto float-left">
+                        </ul>
+                        <ul class="nav navbar-nav float-right">
+                            <!-- <li class="dropdown dropdown-notification nav-item">
+                                <a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><button class="btn mb-2 btn-red-dark">Entrar</button></a>
+                            </li> -->
+                            
+                            <li class="dropdown dropdown-user nav-item">
+                                <a class="dropdown-toggle nav-link dropdown-user-link" href="#" data-toggle="dropdown"><span class="avatar avatar-online"><img src="images/png/avatar.png" alt="avatar"></span></a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item" href="#">Mi perfil</a>
+                                    <a class="dropdown-item" href="#">Configuración</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="login.html"><i class="ft-power"></i> Salir</a>
+                                </div>
+                            </li>
+                            <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-expand link-white" href="#"><i class="icon-full-screen"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- END: Header-->
+        <!-- BEGIN: Main Menu-->
+        <div class="main-menu menu-fixed menu-dark menu-accordion" data-scroll-to-active="true">
+            <div class="main-menu-content">
+                <ul class="navigation navigation-main" id="main-menu-navigation" >
+                    <li class="nav-item"><a href="dashboard.html"><img src="images/icons/icon-home.svg" alt=""><span class="menu-title">Dashboard</span></a></li>
+                    <li class="nav-item">
+                        <a href="pedidos.html"><img src="images/icons/icon-stats.svg" alt=""><span class="menu-title">Pedidos </span>
+                        </a>
+                        <ul class="menu-content">
+                            <li><a class="menu-item" href="pedidos.html"><i></i><span>Pedidos hoy</span></a>
+                            </li>
+                            <li><a class="menu-item" href="nuevoPedido.html"><i></i><span>Nuevo pedido</span></a>
+                            </li>
+                            <li><a class="menu-item" href="historialPedido.html"><i></i><span>Historial </span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="open nav-item">
+                        <a href="#"><img src="images/icons/icon-option.svg" alt=""><span class="menu-title">Catálogo </span>
+                        </a>
+                        <ul class="menu-content">
+                            <li><a class="menu-item" href="listaProducto.html"><i></i><span>Lista de Productos</span></a>
+                            </li>
+                            <li><a class="menu-item" href="nuevoProducto.html"><i></i><span>Nuevo producto</span></a>
+                            </li>
+                            <li><a class="menu-item" href="listaCategoria.html"><i></i><span>Categorías </span></a>
+                            </li>
+                           
+                        </ul>
+                    </li>
+                    <li class=" nav-item">
+                        <a href="#"><img src="images/icons/icon-cart.svg" alt=""><span class="menu-title">Comercio </span>
+                        </a>
+                        <ul class="menu-content">
+                            <li><a class="menu-item" href="tienda.html"><i></i><span>Tienda</span></a>
+                            </li>
+                            <li><a class="menu-item" href="nuevocomercio.html"><i></i><span>Nuevo comercio </span></a>
+                            </li>
+                            <li><a class="menu-item" href="territorio.html"><i></i><span>Territorio </span></a>
+                            </li>
+                            <li><a class="menu-item" href="usuarios.html"><i></i><span>Usuarios </span></a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class=" nav-item"><a href="reporte.html"><img src="images/icons/icon-reports.svg" alt=""><span class="menu-title">Reportes</span></a>
+                    </li>
+
+                    <li class=" nav-item"><a href="parametros.html"><img src="images/icons/icon-settings.svg" alt=""><span class="menu-title">Configuracipon</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- END: Main Menu-->
+        <!-- BEGIN: Content-->
+        <div class="app-content content">
+            <div class="content-wrapper">
+                <div class="content-body pt-6 px-5 pb-4">
+                    <div class="lineFormPhone">
+                        <div class="leftPreview mt-4 mb-0 bgContainer">
+                            <div class=" mt-2">
+                                <div class="row">
+                                    <div class="col-md-5 col-sm-12 tittleContent">
+                                        <h3>Lista de productos</h3>
+                                    </div>
+                                    <div class="col-md-7 col-sm-12 f-right mt-1 d-flex">
+                                        <div class="input-group search">
+                                            <div class="right-inner-addon input-container">
+                                                <i class="icon-search"></i>
+                                                <input type="text" class="form-control" placeholder="Buscar productos"/>
+                                            </div>
+                                        </div>
+                                        <button onclick="location.href='listaProducto2.html'" class="btn btn-red-dark height38 px-2 my-0 ml-2 lista_menu active">
+                                            <img src="images/icons/icon-elm.svg" alt="">
+                                        </button>
+                                        <button onclick="location.href='listaProducto.html'" class="btn btn-red-dark height38 px-2 my-0 ml-2 lista_menu active">
+                                            <img src="images/icons/icon-list.svg" alt="">
+                                        </button>
+                                        <button class="f-right py-2 btn btn-red2 ml-2">
+                                            + Nuevo producto
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="col-md-12">
+                                        <div class="separador mt-3"></div>
+                                    </div>
+                                    <div class="col-md-12 mt-3 mb-2 ">
+                                        <div class="menu-wrapper">
+                                            <ul class="menu categoryLine">
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Promoción</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2 active">
+                                                        <h3 class="title">Piqueos</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Costillas</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Carnes</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Papi Julio</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Carnes</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Cortes</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Angus</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Pescado</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Promoción</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2 active">
+                                                        <h3 class="title">Piqueos</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Costillas</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Carnes</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Papi Julio</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Carnes</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Cortes</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Angus</h3>
+                                                    </li>
+                                                </a>
+                                                <a>
+                                                    <li class="item2">
+                                                        <h3 class="title">Pescado</h3>
+                                                    </li>
+                                                </a>
+                                            </ul>
+                                            <div class="paddles">
+                                                <div class="left-paddle paddle hidden">
+                                                    <img src="images/icons/arrow-left-simple.svg" alt="">
+                                                </div>
+                                                <div class="right-paddle paddle">
+                                                    <img src="images/icons/arrow-right-simple.svg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-3 responsiveTable">
+                                        <table class="tableTulivery space20">
+                                            <thead>
+                                                <tr>
+                                                    <th>Categoría</th>
+                                                    <th>Descriptivo</th>
+                                                    <th>Tamaño</th>
+                                                    <th>Precio</th>
+                                                    <th>Estado</th>
+                                                    <th>Opciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    
+                                                    <td>Mozarella Extra Cheese Familiar</td>
+                                                    <td>Deliciosa pizza con...</td>
+                                                    <td>Familiar</td>
+                                                    <td>S/. 20.00</td>
+                                                    <td>Activo</td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-light optionSelect dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <img src="images/points-02.svg" alt=""> 
+                                                            </button>
+                                                            <div class="dropdown-menu tableOp" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Item 1</a>
+                                                                <a class="dropdown-item" href="#">Item 2</a>
+                                                                <a class="dropdown-item" href="#">Item 3</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td>Mozarella Extra Cheese Familiar</td>
+                                                    <td>Deliciosa pizza con...</td>
+                                                    <td>Familiar</td>
+                                                    <td>S/. 20.00</td>
+                                                    <td>Activo</td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-light optionSelect dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <img src="images/points-02.svg" alt=""> 
+                                                            </button>
+                                                            <div class="dropdown-menu tableOp" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Item 1</a>
+                                                                <a class="dropdown-item" href="#">Item 2</a>
+                                                                <a class="dropdown-item" href="#">Item 3</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    
+                                                    <td>Mozarella Extra Cheese Familiar</td>
+                                                    <td>Deliciosa pizza con...</td>
+                                                    <td>Familiar</td>
+                                                    <td>S/. 20.00</td>
+                                                    <td>Activo</td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-light optionSelect dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <img src="images/points-02.svg" alt=""> 
+                                                            </button>
+                                                            <div class="dropdown-menu tableOp" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Item 1</a>
+                                                                <a class="dropdown-item" href="#">Item 2</a>
+                                                                <a class="dropdown-item" href="#">Item 3</a>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightPreview mt-4 mb-0 pl-3 pr-0 fixedElm">
+                            <div class="phoneFrame-light" style="background-image: url('images/app/marco-01.png');">
+                            </div>
+                            <div class="phoneFrame" style="background-image: url('images/app/light-01.png');">
+                            </div>
+                            <div class="phoneContent">
+                                <div class="header">
+                                    <div class="row px-0 mx-0 bgstore" style="background-image: url('images/app/header.jpg');">
+                                       
+                                       
+                                    </div>
+                                </div>
+                              
+                                <div class="contentProd">
+                                    <div class="row mx-0 px-0">
+                                        
+                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
+                                            <div class="card card-center flex-row mb-2 shadow-sm">
+                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
+                                                </div>
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="mb-0 ">
+                                                        Promoción 2 Pizzas Familiar Kids
+                                                    </h5>
+                                                    <h5 class="price mb-0 pb-0">
+                                                        S/.41.00
+                                                    </h5>
+                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
+                                                </div>
+                                                <div class="card-total">
+                                                    
+                                                    <div class="blue-circle float-right">
+                                                        <img src="images/app/icon-plus@1x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
+                                            <div class="card card-center flex-row mb-2 shadow-sm">
+                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
+                                                </div>
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="mb-0 ">
+                                                        Promoción 2 Pizzas Familiar Kids
+                                                    </h5>
+                                                    <h5 class="price mb-0 pb-0">
+                                                        S/.41.00
+                                                    </h5>
+                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
+                                                </div>
+                                                <div class="card-total">
+                                                    
+                                                    <div class="blue-circle float-right">
+                                                        <img src="images/app/icon-plus@1x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
+                                            <div class="card card-center flex-row mb-2 shadow-sm">
+                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
+                                                </div>
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="mb-0 ">
+                                                        Promoción 2 Pizzas Familiar Kids
+                                                    </h5>
+                                                    <h5 class="price mb-0 pb-0">
+                                                        S/.41.00
+                                                    </h5>
+                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
+                                                </div>
+                                                <div class="card-total">
+                                                    
+                                                    <div class="blue-circle float-right">
+                                                        <img src="images/app/icon-plus@1x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
+                                            <div class="card card-center flex-row mb-2 shadow-sm">
+                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
+                                                </div>
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="mb-0 ">
+                                                        Promoción 2 Pizzas Familiar Kids
+                                                    </h5>
+                                                    <h5 class="price mb-0 pb-0">
+                                                        S/.41.00
+                                                    </h5>
+                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
+                                                </div>
+                                                <div class="card-total">
+                                                    
+                                                    <div class="blue-circle float-right">
+                                                        <img src="images/app/icon-plus@1x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
+                                            <div class="card card-center flex-row mb-2 shadow-sm">
+                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
+                                                </div>
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="mb-0 ">
+                                                        Promoción 2 Pizzas Familiar Kids
+                                                    </h5>
+                                                    <h5 class="price mb-0 pb-0">
+                                                        S/.41.00
+                                                    </h5>
+                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
+                                                </div>
+                                                <div class="card-total">
+                                                    
+                                                    <div class="blue-circle float-right">
+                                                        <img src="images/app/icon-plus@1x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
+                                            <div class="card card-center flex-row mb-2 shadow-sm">
+                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
+                                                </div>
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="mb-0 ">
+                                                        Promoción 2 Pizzas Familiar Kids
+                                                    </h5>
+                                                    <h5 class="price mb-0 pb-0">
+                                                        S/.41.00
+                                                    </h5>
+                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
+                                                </div>
+                                                <div class="card-total">
+                                                    
+                                                    <div class="blue-circle float-right">
+                                                        <img src="images/app/icon-plus@1x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
+                                            <div class="card card-center flex-row mb-2 shadow-sm">
+                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
+                                                </div>
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="mb-0 ">
+                                                        Promoción 2 Pizzas Familiar Kids
+                                                    </h5>
+                                                    <h5 class="price mb-0 pb-0">
+                                                        S/.41.00
+                                                    </h5>
+                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
+                                                </div>
+                                                <div class="card-total">
+                                                    
+                                                    <div class="blue-circle float-right">
+                                                        <img src="images/app/icon-plus@1x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
+                                            <div class="card card-center flex-row mb-2 shadow-sm">
+                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
+                                                </div>
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="mb-0 ">
+                                                        Promoción 2 Pizzas Familiar Kids
+                                                    </h5>
+                                                    <h5 class="price mb-0 pb-0">
+                                                        S/.41.00
+                                                    </h5>
+                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
+                                                </div>
+                                                <div class="card-total">
+                                                    
+                                                    <div class="blue-circle float-right">
+                                                        <img src="images/app/icon-plus@1x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-12 mx-0 px-2 mb-0 pb-0 itemListMobile">
+                                            <div class="card card-center flex-row mb-2 shadow-sm">
+                                                <div class="card-img-right flex-auto" style="background-image: url('images/app/bgStore.png');">
+                                                </div>
+                                                <div class="card-body d-flex flex-column">
+                                                    <h5 class="mb-0 ">
+                                                        Promoción 2 Pizzas Familiar Kids
+                                                    </h5>
+                                                    <h5 class="price mb-0 pb-0">
+                                                        S/.41.00
+                                                    </h5>
+                                                    <!-- <p class="card-text showcode">Familiar Kids</p> -->
+                                                </div>
+                                                <div class="card-total">
+                                                    
+                                                    <div class="blue-circle float-right">
+                                                        <img src="images/app/icon-plus@1x.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END: Content-->
+
+        
+        <!-- ######################### MODAL - Más informacón  #########################  -->
+        <div class="modal fade modalSideRight modal-right" id="nuevoUsuario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="icon-close"></i>
+                    </button>
+                    <div class="modal-body">
+                        <div class="panelPedido detalle pb-5">
+                            <div class="headerPanel">
+                                <div class="left">
+                                    <h6 class="mt-2 pb-0 mb-0"><strong>Editar Producto N° 2051</strong></h6>
+                                </div>
+                            </div>
+                            <div class="col-md-12 mt-3 px-0">
+                                <div class="form-label-group mt-2">
+                                    <label for="inputPassword">Nombre</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ingrese el nombre del cliente">
+                                </div>
+                                <div class="form-label-group mt-2">
+                                    <label for="inputPassword">Precio</label>
+                                    <input type="text" class="form-control formModal" placeholder="Ingrese Precio">
+                                </div>
+                                <div class="form-label-group mt-2">
+                                    <label for="inputPassword">Precio</label>
+                                    <!-- <input type="text" class="form-control formModal" placeholder="Ingrese PRecio"> -->
+                                    <textarea class="form-control formModal" name="textarea" placeholder="Ingrese descripción del producto"  rows="4" cols="50"></textarea>
+                                </div>
+                                <div class="form-label-group mt-4">
+                                    <label for="inputPassword">Estado</label>
+                                    <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                    </label>    
+                                </div>
+                                <div class="f-right mt-4">
+                                    <button class="btn btn-blue">ACTUALIZAR</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/vendors.min.js"></script>
+        <script src="js/app-menu.js"></script>
+        <script type="text/javascript" src="js/jquery.vanillabox-0.1.7.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+    <!-- END: Body-->
+</html>
